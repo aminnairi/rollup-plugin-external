@@ -21,7 +21,7 @@ jobs:
         run: make types
 
       - name: NPM configuration setting
-        run: echo "//registry.npmjs.org/:_authToken={{ secrets.NPM_TOKEN }}" > .npmrc
+        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: Package publishing
         run: 'make publish || true'
