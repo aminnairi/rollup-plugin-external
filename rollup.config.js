@@ -21,7 +21,7 @@ export default {
   ],
   output: {
     file: resolve(__dirname, "library", "rollup-plugin-external.js"),
-    format: "esm",
+    format: "cjs",
     sourcemap: true
   }
 };
