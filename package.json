@@ -3,8 +3,8 @@
   "version": "0.1.2",
   "description": "Rollup plugin for automatically computing your external dependencies.",
   "homepage": "https://github.com/aminnairi/rollup-plugin-external#readme",
-  "main": "./library/rollup-plugin-external.js",
-  "types": "./library/rollup-plugin-external.d.ts",
+  "main": "library/rollup-plugin-external.js",
+  "types": "library/rollup-plugin-external.d.ts",
   "license": "MIT",
   "keywords": [
     "rollup",
@@ -13,7 +13,7 @@
     "dependencies"
   ],
   "files": [
-    "./library"
+    "library"
   ],
   "bugs": {
     "url": "https://github.com/aminnairi/rollup-plugin-external/issues"
