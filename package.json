@@ -1,6 +1,6 @@
 {
   "name": "@aminnairi/rollup-plugin-external",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Rollup plugin for automatically computing your external dependencies.",
   "homepage": "https://github.com/aminnairi/rollup-plugin-external#readme",
   "main": "library/rollup-plugin-external.js",
