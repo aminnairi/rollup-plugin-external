@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "a": "0.1.0"
+  },
+  "peerDependencies": {
+    "b": "0.1.0"
+  },
+  "bundledDependencies": {
+    "c": "0.1.0"
+  },
+  "devDependencies": {
+    "d": "0.1.0"
+  }
+}

@@ -1,0 +1,27 @@
+name: Package
+
+on: [push]
+
+jobs:
+  package:
+    name: Build & publish the package
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Repository installation
+        uses: actions/checkout@v2
+
+      - name: Dependencies installation
+        run: make install
+
+      - name: Library building
+        run: make build
+
+      - name: Types building
+        run: make types
+
+      - name: NPM configuration setting
+        run: echo "//registry.npmjs.org/:_authToken={{ secrets.NPM_TOKEN }}" > .npmrc
+
+      - name: Package publishing
+        run: 'make publish || true'

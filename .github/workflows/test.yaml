@@ -1,0 +1,18 @@
+name: Test
+
+on: [pull_request, push]
+
+jobs:
+  package:
+    name: Run the unit tests
+    runs-on: ubuntu-20.04
+
+    steps:
+      - name: Repository installation
+        uses: actions/checkout@v2
+
+      - name: Dependencies installation
+        run: make install
+
+      - name: Library testing
+        run: make test

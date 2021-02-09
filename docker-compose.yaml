@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  npm:
+    image: node:15.0.0
+    user: node
+    working_dir: /home/node
+    entrypoint: npm
+    command: --help
+    volumes:
+      - .:/home/node
+
+  npx:
+    image: node:15.0.0
+    user: node
+    working_dir: /home/node
+    entrypoint: npx
+    command: --help
+    volumes:
+      - .:/home/node
