@@ -2,9 +2,24 @@
 
 ## Versions
 
+- [`0.1.3`](#013)
 - [`0.1.2`](#012)
 - [`0.1.1`](#011)
 - [`0.1.0`](#010)
+
+## 0.1.3
+
+### Breaking changes
+
+None.
+
+### New features
+
+None.
+
+### Minor changes
+
+- Files, main & types are now working as intended in the package ([#6](https://github.com/aminnairi/rollup-plugin-external/pull/6))
 
 ## 0.1.2
 
