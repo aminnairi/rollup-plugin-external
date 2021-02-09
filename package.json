@@ -1,20 +1,38 @@
 {
   "name": "@aminnairi/rollup-plugin-external",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Rollup plugin for automatically computing your external dependencies.",
-  "lib": "./library/rollup-plugin-external.js",
+  "homepage": "https://github.com/aminnairi/rollup-plugin-external#readme",
+  "main": "./library/rollup-plugin-external.js",
   "types": "./library/rollup-plugin-external.d.ts",
+  "license": "MIT",
+  "keywords": [
+    "rollup",
+    "plugin",
+    "external",
+    "dependencies"
+  ],
+  "files": [
+    "./library"
+  ],
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/aminnairi/rollup-plugin-external/issues"
+  },
+  "author": {
+    "name": "Amin NAIRI",
+    "url": "https://github.com/aminnairi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aminnairi/rollup-plugin-external.git",
+    "directory": "."
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "nyc mocha --extension .spec.ts --require ts-node/register",
     "build": "rollup --config ./rollup.config.js",
     "types": "tsc --emitDeclarationOnly --declaration --declarationMap --outDir library ./source/rollup-plugin-external.ts"
-  },
-  "files": [
-    "library"
-  ],
-  "engines": {
-    "node": ">=14.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.1.1",
