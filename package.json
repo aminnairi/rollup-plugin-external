@@ -15,7 +15,6 @@
   "files": [
     "./library"
   ],
-  "private": true,
   "bugs": {
     "url": "https://github.com/aminnairi/rollup-plugin-external/issues"
   },
